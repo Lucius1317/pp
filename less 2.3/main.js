@@ -13,7 +13,8 @@ console.log (titleProject, screensValue, responsive, service1, servicePrice1, se
 let fullPrice = screenPrice + +servicePrice1 + +servicePrice2
 console.log ('Полная стоиомсть =', fullPrice);
 
-let servicePercentPrice = fullPrice * (percentage / 100)
+let servicePercentPrice = fullPrice - (fullPrice * (percentage / 100));
+console.log ('Итоговая стоимость =', servicePercentPrice);
 
 if (fullPrice > 50000) {
     console.log ('Скидка =', fullPrice * (10 / 100));
